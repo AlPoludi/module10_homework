@@ -1,0 +1,98 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(224, 222, 198);
+	width: auto;
+	height: 100%;
+}
+
+.chat {
+	width: 30em;
+	height: 30em;
+	position: absolute;
+	top: 10%;
+	left: calc(50% - 30em / 2);
+	background-color: #1022eb;
+}
+
+.chat-content-wrapper {
+	display: flex;
+	flex-direction: column;
+	padding: 0.8em;
+}
+
+.option-wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.8em 0;
+}
+
+.option-wrapper > input {
+	flex-basis: 50%;
+}
+
+.basic-input {
+	font-size: 0.8em;
+	padding: 0.5em;
+}
+
+.basic-button {
+	text-transform: uppercase;
+	font-size: 0.8em;
+	padding: 0.5em;
+	color: white;
+  	border: none;
+	outline: 0;
+  	overflow: hidden;
+  	text-align: center;
+	cursor: pointer;
+}
+
+.basic-button.color-grey {
+	background-color: #687a6e;
+}
+
+.basic-button.color-green {
+	background-color: #0f9b0a;
+}
+
+.dialog-wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 24em;
+	background-color: #f5f5ec;
+	overflow: auto;
+	border: 2px solid rgb(32, 31, 32);
+}
+
+.message {
+	max-width: 12em;
+	margin: 0.5em;
+	padding: 0.5em;
+	border-radius: 0.8em;
+	word-wrap: break-word; 
+	border: 1px solid #2e2a2a;
+}
+
+.message.client {
+	background-color: #fcf8f7;
+	align-self: flex-end;
+}
+
+.message.server {
+	background-color: #fcf8f7;
+	align-self: flex-start;
+}
+
+.message.error {
+	background-color: #817a7a;
+	align-self: center;
+}
+
+.gl-ref {
+	color: #e2d8d8;
+}
